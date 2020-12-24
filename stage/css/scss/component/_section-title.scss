@@ -1,0 +1,23 @@
+/* Section Title*/
+.section-title{
+
+  text-transform: capitalize;
+  margin-bottom: 4rem ;
+  text-align: center;
+
+  .sub-head{
+
+    font-size: .9rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: var(--theme-color);
+    font-weight: bold;
+  }
+
+  .sec-head{
+
+    font-size: 2.5rem;
+    color: var(--head-color);
+  }
+
+}

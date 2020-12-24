@@ -1,0 +1,33 @@
+/*
+Template Name: Zara Personal Portfolio Template
+Created By: Kadeer
+Description: Zara is Fully Responsive Personal Portfolio Template with awesome features.
+Version: v1.0
+*/
+
+// Helpers
+@import 'scss/helpers/variables.scss';
+@import 'scss/helpers/mixin.scss';
+
+//themes
+@import 'scss/layout/theme.scss';
+
+// Component
+@import 'scss/component/switch-theme.scss';
+//@import 'scss/component/preloader.scss';
+@import 'scss/component/theme-button.scss';
+@import 'scss/component/packtop.scss';
+@import 'scss/component/section-title.scss';
+
+// Layout
+@import 'scss/layout/global.scss';
+@import 'scss/layout/side-menu.scss';
+@import 'scss/layout/theme-logo-bar.scss';
+@import 'scss/layout/hero.scss';
+@import 'scss/layout/about.scss';
+@import 'scss/layout/services.scss';
+@import 'scss/layout/portfolio.scss';
+@import 'scss/layout/testimonials.scss';
+@import 'scss/layout/blog.scss';
+@import 'scss/layout/contact2.scss';
+@import 'scss/layout/footer.scss';

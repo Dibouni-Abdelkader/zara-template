@@ -1,0 +1,31 @@
+// Start Navigation
+
+nav.navbar.navbar-expand-lg.navbar-dark.nav_bar
+  .container
+    a.navbar-brand(href='#') Adam
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#main-nav')
+      span.navbar-toggler-icon
+    #main-nav.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        li.nav-item
+          a.nav-link.active(href='#',data-scroll='home') home
+        li.nav-item
+          a.nav-link(href='#',data-scroll='about')
+            | about 
+            span.sr-only (current)
+
+        li.nav-item
+          a.nav-link(href='#',data-scroll='services') services
+
+        li.nav-item
+          a.nav-link(href='#', data-scroll='portfolio') portfolio
+        
+        li.nav-item
+          a.nav-link(href='#',data-scroll='testimonials') testimonials
+
+        li.nav-item
+          a.nav-link(href='#',data-scroll='blog') blog
+        li.nav-item
+          a.nav-link(href='#',data-scroll='contact') contact
+
+// End Navigation

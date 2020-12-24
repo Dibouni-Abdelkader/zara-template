@@ -1,0 +1,28 @@
+/* Themes Variables */
+:root{
+
+  --first-bg-color: #f5f5f5 ;
+  --second-bg-color: #fafafa;
+  --theme-color: #e80566;
+  --theme-alt-color: rgba(247, 99, 106, 0.5);
+  --overlay-color: rgba(18, 29, 48, 0.8);
+  --head-color: #000;
+  --white-color: #fff;
+  --text-color: rgb(133, 131, 131);
+  --dark-color: #070e19;
+
+
+  
+}
+
+
+:root.dark{
+
+  --first-bg-color: #070e19;
+  --second-bg-color: #121d30 ;
+  --overlay-color: rgba(18, 29, 48, 0.9);
+  --head-color: rgb(253, 253, 253);
+  --white-color: #fff;
+  --text-color: rgb(216, 214, 214);
+
+}

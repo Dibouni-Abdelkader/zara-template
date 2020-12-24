@@ -1,0 +1,132 @@
+ /* Start Hero Section */
+ .hero {
+
+   position: relative;
+   background: url('../images/hero/hero.jpg') fixed no-repeat center center / cover;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+
+   &:after {
+
+     @include overlay;
+     content: '';
+     background: var(--overlay-color);
+     @include Transition(all, .3s, ease-in-out);
+     z-index: 1;
+   }
+
+   .intro {
+
+     text-transform: uppercase;
+     z-index: 2;
+     position: relative;
+     //width: 100%;
+
+
+     h1 {
+       font-size: 5rem;
+       text-transform: uppercase;
+       color: var(--white-color);
+       font-weight: 400;
+
+
+       span {
+         color: var(--theme-color);
+
+       }
+
+       @media(max-width: 576px) {
+
+         font-size: 3rem;
+         text-align: center;
+       }
+
+
+     }
+
+
+     h3 {
+
+       color: var(--white-color);
+       text-transform: capitalize;
+       font-size: 1.5rem;
+       font-weight: bold;
+
+       span.typed {
+         color: var(--theme-color);
+       }
+
+       @media(max-width: 575px) {
+
+         font-size: 1.1rem;
+       }
+
+     }
+
+
+     .intro-button {
+       @extend .theme-button;
+       margin: 10px 0;
+       text-transform: uppercase;
+     }
+
+   }
+
+   .go-down {
+     x position: absolute;
+     z-index: 99;
+     bottom: 20px;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 35px;
+     height: 35px;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 35px;
+     cursor: pointer;
+     @include Transition(all, ease, .4s);
+     animation: goDown 2s ease infinite;
+
+
+     &:hover {
+       background-color: var(--theme-color);
+       animation-play-state: paused;
+     }
+
+     .go-down-icon {
+
+       font-size: 1rem;
+       color: var(--white-color);
+       ;
+
+     }
+   }
+
+
+ }
+
+ @keyframes goDown {
+
+   0%,
+   100% {
+
+     bottom: 100px;
+
+   }
+
+   50% {
+
+     bottom: 60px;
+
+
+   }
+ }
+
+
+
+
+ /* End Hero Section*/

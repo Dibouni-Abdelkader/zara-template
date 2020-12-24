@@ -1,0 +1,64 @@
+.side-menu{
+	width: 45px;
+	text-align: center;
+	z-index: 999;
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	border-radius: 25px;
+	background-color: var(--theme-color);
+
+	.hamburger-toggle{
+		display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: var(--white-color);
+    text-align: center;
+    @include Transition(all,.5s,ease);
+    cursor: pointer;
+
+		i{
+
+			width: 45px;
+			height: 45px;
+			display: block;
+			line-height: 45px;
+			@include Transition(all,.5s,ease);
+
+
+		}
+
+	}
+
+	.menu{
+    padding-top: 15px;
+    display: none;
+
+ 
+		.menu-link{
+
+			text-decoration: none;
+			color: var(--white-color);
+			width: 30px;
+			height: 30px;
+			//margin-bottom: 15px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			margin: 0 auto 15px;
+			align-items: center;
+			@include Transition(all,.5s,ease);
+			
+			&.active,
+			&:hover{
+				color: var(--theme-color);
+				background-color: var(--white-color);
+
+			}
+
+		}
+	}
+
+}

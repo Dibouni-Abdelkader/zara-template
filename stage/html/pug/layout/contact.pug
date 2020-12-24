@@ -1,0 +1,51 @@
+// Start Contact Section 
+section#contact.smoth-section.contact
+
+	.container
+		+section-title('get in touch','contact us')
+		.row
+			.col-md-12
+				form(action='' method='')
+					.row
+						.col-md-6
+							.form-group
+								input(type='text',
+											required='required',
+											placeholder='name*',
+											name='name',
+											id='name').form-control
+						.col-md-6
+							.form-group
+								input(type='email',
+										required='required',
+										placeholder='email*',
+										name='email',
+										id='email').form-control
+
+						.col-md-6
+							.form-group
+								input(type='phone',
+										placeholder='phone',
+										name='phone',
+										id='phone').form-control
+
+						.col-md-6
+							.form-group
+								input(type='text',
+										placeholder='location',
+										name='location',
+										id='location').form-control
+
+
+						.col-md-12
+							.form-group
+								textarea(required='required',
+										placeholder='your message...').form-control
+
+						.col-md-12.text-center
+							button.contact-button(type='submit') send message
+
+
+
+
+// End Contact Section 

@@ -1,0 +1,37 @@
+/* Preloader*/
+.preloader{
+
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-color);
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  .d-spinner{
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--theme-color);
+    border-radius: 50%;
+    opacity: 0;
+    animation: d-spinner .75s linear infinite;
+
+
+
+  }
+}
+
+@keyframes d-spinner{
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

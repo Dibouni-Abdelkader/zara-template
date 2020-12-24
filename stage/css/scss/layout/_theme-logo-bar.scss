@@ -1,0 +1,44 @@
+.logo-bar{
+
+	  position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 999;
+    background-color: var(--theme-color);
+    padding: 15px;
+
+	&:before{
+
+		content: '';
+    position: absolute;
+    left: 42px;
+    bottom: -82px;
+    border-width: 41px;
+    border-color: var(--theme-color) transparent transparent transparent;
+    border-style: solid;
+    border-right-width: 0;
+	 
+	}
+
+	&:after{
+
+		content: '';
+    position: absolute;
+    bottom: -82px;
+    border-width: 41px;
+    border-style: solid;
+    right: 42px;
+    border-color: var(--theme-color) transparent transparent transparent;
+    border-left-width: 0;
+
+	}
+
+
+	h5 {
+
+		color: var(--white-color);
+    font-size: 1.6rem;
+    padding-top: 5px;
+
+	}
+}

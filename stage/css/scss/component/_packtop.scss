@@ -1,0 +1,31 @@
+/* Back To Top */
+.packtop{
+
+	position: fixed;
+	z-index: 999;
+	bottom: 5px;
+	right: 20px;
+	cursor: pointer;
+	display: none;
+	.pack-icon{
+
+		display: block;
+    background-color: var(--theme-color);
+    color: var(--white-color);
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+		@include Transition(all,.3s,ease); 
+
+		&:hover{
+			background-color: var(--theme-color);
+
+		}
+
+
+	}
+
+
+}

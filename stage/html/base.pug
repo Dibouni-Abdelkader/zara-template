@@ -1,0 +1,33 @@
+-var title = 'Zara Template'
+doctype html
+html(lang='en')
+	head
+		//- Include Meta Tags From meta.pug
+		include pug/includes/meta.pug
+
+		//- Title 
+		title= title
+
+		//- Include Styles From styles.pug
+		include pug/includes/styles.pug
+	body
+		//- Include Components
+		//-include pug/components/preloader.pug
+		include pug/components/switch-theme.pug
+		include pug/components/packtop.pug
+		include pug/components/section-title.pug
+
+		//-Include Sections From Layout
+		include pug/layout/side-menu.pug
+		include pug/layout/theme-logo-bar.pug
+		include pug/layout/hero.pug
+
+		block content
+			//- page content goes here
+			
+		include pug/layout/footer.pug
+			
+
+		//- Include Scripts From scripts.pug
+		include pug/includes/scripts.pug
+

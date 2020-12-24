@@ -1,0 +1,71 @@
+/* Start Navigation */
+
+// Overide Bootsrap Classes
+
+.nav_bar{
+
+	position: absolute;
+	width: 100%;
+	top: 0;
+	z-index: 9999;
+	transition: .8s;
+	padding: 1.2rem 1rem;
+	//color: #fff !important;
+
+	@media (max-width: 992px){
+
+		background-color: var(--black-color) !important;
+}
+
+
+}
+
+.fixed{
+
+	position: fixed !important;
+	padding: 0.8rem 1rem;
+	background-color: var(--second-bg-color);
+	box-shadow: 0 2px 7px #00000014;
+
+	&.navbar-expand-lg .navbar-nav .nav-link{
+
+		color: var(--text-color);
+	}
+
+}
+
+
+.navbar-brand,
+.navbar-brand:hover{
+
+	color: var(--theme-color) !important;
+	text-transform: capitalize;
+	font-size: 2rem;
+	span{
+
+		color: var(--white-color);;
+	}
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+
+	color: var(--white-color);
+	text-transform: capitalize;
+	@include Transition(all,.3s,ease);
+	position:relative;
+
+	@media (max-width:992px){
+
+		&:hover{
+
+			padding-left: 5px;
+		}
+	}
+
+	&:hover,
+	&.active{
+		color: var(--theme-color) !important;
+		
+	}
+}
+/* End Navigation */

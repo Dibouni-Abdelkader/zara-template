@@ -1,0 +1,118 @@
+/* Start About Section */
+.about {
+	padding: $sec-padding;
+	background-color: var(--second-bg-color);
+
+	.about-info {
+		//background-color: var(--first-bg-color);
+		padding: 10px;
+
+		h5 {
+
+			text-transform: capitalize;
+			color: var(--head-color);
+			font-size: 1.5rem;
+
+			span {
+				color: var(--theme-color);
+			}
+
+		}
+
+		p {
+			line-height: 1.6;
+			font-size: .9rem;
+			color: var(--text-color);
+		}
+
+		.info-box {
+
+			text-transform: capitalize;
+			font-size: .9rem;
+			margin-bottom: .5rem;
+
+			span.icon-wrap {
+
+				color: var(--head-color);
+				font-weight: bold;
+
+				i {
+					color: var(--theme-color);
+					padding-right: 2px;
+				}
+			}
+
+			span.info-details {
+
+				color: var(--text-color);
+			}
+
+		}
+
+		.social-media-info {
+
+			a {
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+				border-radius: 50%;
+				background-color: var(--theme-color);
+				color: var(--white-color);
+				text-align: center;
+				margin:5px;
+				display: inline-block;
+				@include Transition(all, ease, .5s);
+
+				&:hover {
+					background: var(--theme-color);
+				}
+			}
+
+		}
+
+	}
+
+	.about-skills {
+		padding-bottom: 10px;
+
+		.progress-skill {
+			position: relative;
+			margin-bottom: 5px;
+
+			.progress-label {
+				text-transform: capitalize;
+				color: var(--text-color);
+				padding: 10px 0;
+				font-size: .8rem;
+			}
+
+			.progress-percent {
+
+				position: absolute;
+				bottom: 2px;
+				right: 4px;
+				color: var(--theme-color);
+				font-size: .8rem;
+
+			}
+
+			.progress {
+				height: 2px;
+				background-color: var(--first-bg-color);
+
+				.progress-bar {
+					background-color: var(--theme-color);
+
+				}
+			}
+
+
+		}
+	}
+
+
+
+}
+
+
+/* End About Section */

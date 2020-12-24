@@ -1,0 +1,23 @@
+/* Theme Button*/
+.theme-button {
+
+	display: inline-block;
+	padding: 8px 36px;
+	text-decoration: none !important;
+	font-size: .9rem;
+	border: 1px solid var(--theme-color);
+	background-color: var(--theme-color);
+	color: var(--white-color);
+	text-transform: capitalize;
+	border-radius: 4px;
+	text-decoration: none;
+	text-align: center;
+	@include Transition(all, .4s, ease-in-out);
+
+	&:hover{
+
+		background-color: transparent;
+		color: var(--theme-color);
+	}
+}
+

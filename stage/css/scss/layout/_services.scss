@@ -1,0 +1,87 @@
+
+/* Start Services Section*/
+.services{
+
+	padding: $sec-padding;
+	background-color:var(--first-bg-color);
+
+
+	.singel-service{
+
+		padding: 20px;
+    background-color: var(--second-bg-color);
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    border-left: 1px solid var(--first-bg-color);
+    border-bottom: 1px solid var(--first-bg-color);
+		@include Transition(all,.5s,linear);
+
+		&:before{
+
+			content: '';
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    width: 0%;
+	    height: 2px;
+	    background-color: var(--theme-color);
+	    @include Transition(all,.5s,linear);
+		}
+
+		&:hover{
+
+			&:before{
+
+				width: 100%;
+
+			}
+
+			.ser-icon{
+				transform: rotate(360deg) scale(.95);
+				color: var(--white-color);
+				border-width: 3px;
+				background-color: var(--theme-color);
+
+			}
+		}
+
+		.ser-icon{
+
+			color: var(--theme-color);
+	    margin-bottom: 10px;
+	    width: 4rem;
+	    height: 4rem;
+	    line-height: 4rem;
+	    font-size: 1.8rem;
+	    border: 1px solid var(--theme-color);
+	    border-radius: 50%;
+			@include Transition(all,.5s,ease);
+
+
+		}
+
+		.ser-title{
+
+			text-transform: capitalize;
+			font-size: 1rem;
+			margin-bottom: 10px;
+			color: var(--head-color);
+			font-weight: bold;
+
+
+		}
+
+
+		.ser-desc{
+
+			font-size: 14px;
+			line-height: 1.7;
+			color: var(--text-color);
+		}
+	}
+
+
+}
+/* End Services Section*/

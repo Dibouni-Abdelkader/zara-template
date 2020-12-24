@@ -1,0 +1,23 @@
+/* Switch Theme */
+.switch-theme{
+
+  width: 45px;
+  height: 45px;
+  background-color: var(--theme-color);
+  position: fixed;
+  right: 70px;
+  top: 20px;
+  z-index: 999;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   @include Transition(all,.3s ,ease);
+
+  .icon{
+
+    color: var(--white-color);
+
+  }
+
+}
